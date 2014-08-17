@@ -1,0 +1,31 @@
+
+a,
+a:visited {
+  color: #444;
+  text-decoration: none;
+}
+
+footer a,
+footer a:visited,
+p a,
+p a:visited {
+  color: #009492;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed #009492;
+}
+
+footer a:hover,
+footer a:visited:hover,
+p a:hover,
+p a:visited:hover {
+  border-bottom-style: solid;
+}
+
+footer a:active,
+footer a:visited:active,
+p a:active,
+p a:visited:active {
+  background: #009492;
+  color: #fff;
+  border-bottom: 1px solid #009492;
+}

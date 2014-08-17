@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<section class="container">
+  <span class="big">Blog</span>
+    <ul>
+      {% for post in site.posts limit:1 %}
+       <li>
+        <article>
+          <h1>
+            <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+          </h1>
+          <p class="date">{{ post.date| date: "%m/%d/%Y" }}</p>
+
+          <div class="content">
+     <p>{{ post.content | strip_html | truncate: 250 }}</p>
+          </div>
+        </article>
+      </li>
+    {% endfor %}
+    {% for post in site.posts offset:1 %}
+
+            <li>
+        <article>
+          <h1>
+            <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+          </h1>
+          <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </article>
+      </li>
+        
+    {% endfor %}
+  </ul>
+
+        <nav class="pagination">
+        <a href="/posts/2">&larr; Previous</a>
+        </nav>
+    
+</section>
+
+
+
+
+
+

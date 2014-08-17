@@ -1,0 +1,22 @@
+<head>
+ 		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+ 		<meta name="description" content="{{ site.description }}">
+ 		<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+ 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds/rss">
+ 		<link rel="shortcut icon" href="/assets/favicon.png">
+ 		<link rel="author" href="https://plus.google.com/+anandubajith">
+ 		<meta name="twitter:site" content="@anandubajith">
+ 		<!--[if lt IE 9]>
+ 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ 		<![endif]-->
+ 	    <meta property="og:title" content="{{ site.domain }}">
+ 	    <meta property="og:type" content="website">
+ 	    <meta property="og:url" content="">
+ 	    <meta property="og:image" content="/themes/japborst/img/og_image.gif">
+ 	    <meta property="og:site_name" content="{{ site.domain }}">
+ 	    <meta property="og:description" content="{{ site.description }}">
+ 		<script src="http://use.edgefonts.net/neuton:n2,n3,n7.js"></script>
+ 		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseur | prepend: site.url }}">
+</head>

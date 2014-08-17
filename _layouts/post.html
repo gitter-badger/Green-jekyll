@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section class="container" itemscope itemtype="http://schema.org/Blog">
+	<h1 class="big" itemprop="name">{{ page.title }}</h1>
+	<p class="date">
+		<span itemprop="datePublished" content="2014-03-06">{{ page.date | date: "%b %-d, %Y" }}</span> 
+		by <span itemprop="author">{{ site.author }}</span>
+	</p>
+	<article itemprop="articleBody">{{ content }}</article>
+<a href="http://twitter.com/home?status={{ page.title }} by @{{ site.twitter }} {{ site.url }}{{ page.url }}" target="_blank" class="tweet">Tweet this</a>
+</section>
+<a href="#top" class="top">Top</a>
